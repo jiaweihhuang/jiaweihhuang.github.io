@@ -1,0 +1,149 @@
+---
+---
+
+@article{huang2023statistical,
+    title={On the Statistical Efficiency of Mean Field Reinforcement Learning with General Function Approximation},
+    author={Huang, Jiawei and Yardim, Batuhan and He, Niao},
+    journal={Preprint},
+    pdf = {https://arxiv.org/abs/2305.11283},
+    year={2023},
+    abstract={
+      In this paper, we study the statistical efficiency of Reinforcement Learning in Mean-Field Control (MFC) and Mean-Field Game (MFG) with general function approximation. We introduce a new concept called Mean-Field Model-Based Eluder Dimension (MBED), which subsumes a rich family of Mean-Field RL problems. Additionally, we propose algorithms based on Optimistic Maximal Likelihood Estimation, which can return an ϵ-optimal policy for MFC or an ϵ-Nash Equilibrium policy for MFG, with sample complexity polynomial w.r.t. relevant parameters and independent of the number of states, actions and the number of agents. Notably, our results only require a mild assumption of Lipschitz continuity on transition dynamics and avoid strong structural assumptions in previous work. Finally, in the tabular setting, given the access to a generative model, we establish an exponential lower bound for MFC setting, while providing a novel sample-efficient model elimination algorithm to approximate equilibrium in MFG setting. Our results reveal a fundamental separation between RL for single-agent, MFC, and MFG from the sample efficiency perspective.
+    }
+}
+
+@article{huang2023robust,
+  title={Robust Knowledge Transfer in Tiered Reinforcement Learning},
+  author={Huang, Jiawei and He, Niao},
+  journal={Preprint},
+  pdf = {https://arxiv.org/abs/2302.05534},
+  year={2023},
+  abstract={In this paper, we study the Tiered Reinforcement Learning setting, a parallel transfer learning framework, where the goal is to transfer knowledge from the low-tier (source) task to the high-tier (target) task to reduce the exploration risk of the latter while solving the two tasks in parallel. Unlike previous work, we do not assume the low-tier and high-tier tasks share the same dynamics or reward functions, and focus on robust knowledge transfer without prior knowledge on the task similarity. We identify a natural and necessary condition called the ``Optimal Value Dominance'' for our objective. Under this condition, we propose novel online learning algorithms such that, for the high-tier task, it can achieve constant regret on partial states depending on the task similarity and retain near-optimal regret when the two tasks are dissimilar, while for the low-tier task, it can keep near-optimal without making sacrifice. Moreover, we further study the setting with multiple low-tier tasks, and propose a novel transfer source selection mechanism, which can ensemble the information from all low-tier tasks and allow provable benefits on a much larger state-action space.},
+}
+
+
+@inproceedings{huang2022tiered,
+  pdf = {https://arxiv.org/abs/2205.12418},
+  author = {Huang, Jiawei and Zhao, Li and Qin, Tao and Chen, Wei and Jiang, Nan and Liu, Tie-Yan},
+  title = {Tiered Reinforcement Learning: Pessimism in the Face of Uncertainty and Constant Regret},
+  booktitle={NeurIPS},
+  year = {2022},
+  code = {https://github.com/jiaweihhuang/Tiered-RL-Experiments},
+  OpenReview = {https://openreview.net/forum?id=mE1QoOe5juz},
+  abstract = {We propose a new learning framework that captures the tiered structure of many real-world user-interaction applications, where the users can be divided into two groups based on their different tolerance on exploration risks and should be treated separately.
+  In this setting, we simultaneously maintain two policies $\pi^{\text{O}}$ and $\pi^{\text{E}}$: $\pi^{\text{O}}$ (``O'' for ``online'') interacts with more risk-tolerant users from the first tier and minimizes regret by balancing exploration and exploitation as usual, 
+  while $\pi^{\text{E}}$ (``E'' for ``exploit'') exclusively focuses on exploitation for risk-averse users from the second tier utilizing the data collected so far.
+  An important question is whether such a separation yields advantages over the standard online setting (i.e., $\pi^{\text{E}}=\pi^{\text{O}}$) for the risk-averse users. 
+  We individually consider the gap-independent vs.~gap-dependent settings. For the former, we prove that the separation is indeed not beneficial from a minimax perspective.
+  For the latter, we show that if choosing Pessimistic Value Iteration as the exploitation algorithm to produce $\pi^{\text{E}}$, we can achieve a constant regret for risk-averse users independent of the number of episodes $K$, which is in sharp contrast to the $\Omega(\log K)$ regret for any online RL algorithms in the same setting, while the regret of $\pi^{\text{O}}$ (almost) maintains its online regret optimality and does not need to compromise for the success of $\pi^{\text{E}}$.},
+}
+
+
+@InProceedings{pmlr-v162-shi22f,
+  title = 	 {A Minimax Learning Approach to Off-Policy Evaluation in Confounded Partially Observable Markov Decision Processes},
+  author =       {Shi, Chengchun and Uehara, Masatoshi and Huang, Jiawei and Jiang, Nan},
+  booktitle = 	 {ICML},
+  pages = 	 {20057--20094},
+  year = 	 {2022},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  code = {https://github.com/jiaweihhuang/Confounded-POMDP-Exp},
+  pdf = 	 {https://arxiv.org/abs/2111.06784},
+  awards = {Long Oral},
+  abstract = {We consider off-policy evaluation (OPE) in Partially Observable Markov Decision Processes (POMDPs),
+  where the evaluation policy depends only on observable variables and the behavior policy depends on unobservable
+  latent variables. Existing works either assume no unmeasured confounders, or focus on settings where both
+  the observation and the state spaces are tabular. In this work, we first propose novel identification methods for
+  OPE in POMDPs with latent confounders, by introducing bridge functions that link the target policy’s value
+  and the observed data distribution. We next propose minimax estimation methods for learning these bridge
+  functions, and construct three estimators based on these estimated bridge functions, corresponding to a value
+  function-based estimator, a marginalized importance sampling estimator, and a doubly-robust estimator. Our
+  proposal permits general function approximation and is thus applicable to settings with continuous or large
+  observation/state spaces. The nonasymptotic and asymptotic properties of the proposed estimators are investigated
+  in detail. 
+},
+}
+
+@inproceedings{huang2022towards,
+    title={Towards Deployment-Efficient Reinforcement Learning: Lower Bound and Optimality},
+    author={Jiawei Huang and Jinglin Chen and Li Zhao and Tao Qin and Nan Jiang and Tie-Yan Liu},
+    booktitle={ICLR},
+    year={2022},
+    pdf = {https://openreview.net/forum?id=ccWaPGl9Hq},
+    awards = {Spotlight},
+    OpenReview = {https://openreview.net/forum?id=ccWaPGl9Hq&referrer=%5Bthe%20profile%20of%20Jiawei%20Huang%5D},
+    abstract = {Deployment efficiency is an important criterion for many real-world applications of reinforcement learning (RL). Despite the community's increasing interest, there lacks a formal theoretical formulation for the problem. In this paper, we propose such a formulation for deployment-efficient RL (DE-RL) from an "optimization with constraints" perspective: we are interested in exploring an MDP and obtaining a near-optimal policy within minimal \emph{deployment complexity}, whereas in each deployment the policy can sample a large batch of data. Using finite-horizon linear MDPs as a concrete structural model, we reveal the fundamental limit in achieving deployment efficiency by establishing information-theoretic lower bounds, and provide algorithms that achieve the optimal deployment efficiency. Moreover, our formulation for DE-RL is flexible and can serve as a building block for other practically relevant settings; we give "Safe DE-RL" and "Sample-Efficient DE-RL" as two examples, which may be worth future investigation.},
+}
+
+
+
+@InProceedings{pmlr-v151-huang22a,
+  title = 	 { On the Convergence Rate of Off-Policy Policy Optimization Methods with Density-Ratio Correction },
+  author =       {Huang, Jiawei and Jiang, Nan},
+  booktitle = 	 {AISTATS},
+  pages = 	 {2658--2705},
+  year = 	 {2022},
+  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
+  volume = 	 {151},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf = 	 {https://arxiv.org/abs/2106.00993},
+  abstract = {In this paper, we study the convergence properties of off-policy policy improvement algorithms with state-action density ratio correction under function approximation setting, where the objective function is formulated as a max-max-min optimization problem. We characterize the bias of the learning objective and present two strategies with finite-time convergence guarantees. In our first strategy, we present algorithm P-SREDA with convergence rate O(\epsilon^−3), whose dependency on ϵ is optimal. In our second strategy, we propose a new off-policy actor-critic style algorithm named O-SPIM. We prove that O-SPIM converges to a stationary point with total complexity O(\epsilon^−4), which matches the convergence rate of some recent actor-critic algorithms in the on-policy setting.},
+}
+
+
+
+@article{jiang2020minimax,
+  title={Minimax Value Interval for Off-Policy Evaluation and Policy Optimization},
+  author={Jiang, Nan and Huang, Jiawei},
+  journal={NeurIPS},
+  volume={33},
+  pages={2747--2758},
+  year={2020},
+  pdf = 	 {https://arxiv.org/abs/2002.02081},
+  code = {https://github.com/jiaweihhuang/Minimax-Value-Interval},
+  abstract = {We study minimax methods for off-policy evaluation (OPE) using value functions and marginalized importance weights. Despite that they hold promises of overcoming the exponential variance in traditional importance sampling, several key problems remain:
+  (1) They require function approximation and are generally biased. For the sake of trustworthy OPE, is there anyway to quantify the biases?
+  (2) They are split into two styles ("weight-learning" vs "value-learning"). Can we unify them?
+  In this paper we answer both questions positively. By slightly altering the derivation of previous methods (one from each style; Uehara et al., 2020), we unify them into a single value interval that comes with a special type of double robustness: when either the value-function or the importance-weight class is well specified, the interval is valid and its length quantifies the misspecification of the other class. Our interval also provides a unified view of and new insights to some recent methods, and we further explore the implications of our results on exploration and exploitation in off-policy policy optimization with insufficient data coverage.},
+}
+
+
+@InProceedings{pmlr-v119-uehara20a,
+  title = 	 {Minimax Weight and Q-Function Learning for Off-Policy Evaluation},
+  author =       {Uehara, Masatoshi and Huang, Jiawei and Jiang, Nan},
+  booktitle = 	 {ICML},
+  pages = 	 {9659--9668},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf = 	 {https://arxiv.org/abs/1910.12809},
+  abstract = {We provide theoretical investigations into off-policy evaluation in reinforcement learning using function approximators for (marginalized) importance weights and value functions. Our contributions include: (1) A new estimator, MWL, that directly estimates importance ratios over the state-action distributions, removing the reliance on knowledge of the behavior policy as in prior work (Liu et al., 2018). (2) Another new estimator, MQL, obtained by swapping the roles of importance weights and value-functions in MWL. MQL has an intuitive interpretation of minimizing average Bellman errors and can be combined with MWL in a doubly robust manner. (3) Several additional results that offer further insights into these methods, including the sample complexity analyses of MWL and MQL, their asymptotic optimality in the tabular setting, how the learned importance weights depend the choice of the discriminator class, and how our methods provide a unified view of some old and new algorithms in RL.},
+}
+
+@inproceedings{huang2020importance,
+  title={From Importance Sampling to Doubly Robust Policy Gradient},
+  author={Huang, Jiawei and Jiang, Nan},
+  booktitle={ICML},
+  pages={4434--4443},
+  year={2020},
+  organization={PMLR},
+  pdf = 	 {https://arxiv.org/abs/1910.09066},
+  code = {https://github.com/jiaweihhuang/DR-PG},
+  abstract = {We show that on-policy policy gradient (PG) and its variance reduction variants can be derived by taking finite difference of function evaluations supplied by estimators from the importance sampling (IS) family for off-policy evaluation (OPE). Starting from the doubly robust (DR) estimator (Jiang & Li, 2016), we provide a simple derivation of a very general and flexible form of PG, which subsumes the state-of-the-art variance reduction technique (Cheng et al., 2019) as its special case and immediately hints at further variance reduction opportunities overlooked by existing literature. We analyze the variance of the new DR-PG estimator, compare it to existing methods as well as the Cramer-Rao lower bound of policy gradient, and empirically show its effectiveness.}
+}
+
+@inproceedings{ma2020weightnet,
+  title={Weightnet: Revisiting the design space of weight networks},
+  author={Ma, Ningning and Zhang, Xiangyu and Huang, Jiawei and Sun, Jian},
+  booktitle={ECCV},
+  pages={776--792},
+  year={2020},
+  organization={Springer},
+  pdf = 	 {https://arxiv.org/abs/2007.11823},
+  abstract = {We present a conceptually simple, flexible and effective framework for weight generating networks. Our approach is general that unifies two current distinct and extremely effective SENet and CondConv into the same framework on weight space. The method, called WeightNet, generalizes the two methods by simply adding one more grouped fully-connected layer to the attention activation layer. We use the WeightNet, composed entirely of (grouped) fully-connected layers, to directly output the convolutional weight. WeightNet is easy and memory-conserving to train, on the kernel space instead of the feature space. Because of the flexibility, our method outperforms existing approaches on both ImageNet and COCO detection tasks, achieving better Accuracy-FLOPs and Accuracy-Parameter trade-offs. The framework on the flexible weight space has the potential to further improve the performance.},
+  code = {https://github.com/megvii-model/WeightNet},
+}
