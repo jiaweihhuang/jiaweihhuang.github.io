@@ -18,6 +18,7 @@ group :jekyll_plugins do
     gem 'webrick'
     gem "nokogiri", ">= 1.6.7.rc"
     gem 'sprockets', '~> 2.0'
+    gem 'faraday-retry'
 end
 group :other_plugins do
     gem 'httparty'
