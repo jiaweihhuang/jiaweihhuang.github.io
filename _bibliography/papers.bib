@@ -10,6 +10,8 @@
     abstract={
       In this paper, we study the statistical efficiency of Reinforcement Learning in Mean-Field Control (MFC) and Mean-Field Game (MFG) with general function approximation. We introduce a new concept called Mean-Field Model-Based Eluder Dimension (MBED), which subsumes a rich family of Mean-Field RL problems. Additionally, we propose algorithms based on Optimistic Maximal Likelihood Estimation, which can return an ϵ-optimal policy for MFC or an ϵ-Nash Equilibrium policy for MFG, with sample complexity polynomial w.r.t. relevant parameters and independent of the number of states, actions and the number of agents. Notably, our results only require a mild assumption of Lipschitz continuity on transition dynamics and avoid strong structural assumptions in previous work. Finally, in the tabular setting, given the access to a generative model, we establish an exponential lower bound for MFC setting, while providing a novel sample-efficient model elimination algorithm to approximate equilibrium in MFG setting. Our results reveal a fundamental separation between RL for single-agent, MFC, and MFG from the sample efficiency perspective.
     },
+    selected = {true},
+    category = {MARL},
 }
 
 @article{huang2023robust,
@@ -19,6 +21,8 @@
   pdf = {https://arxiv.org/abs/2302.05534},
   year={2023},
   abstract={In this paper, we study the Tiered Reinforcement Learning setting, a parallel transfer learning framework, where the goal is to transfer knowledge from the low-tier (source) task to the high-tier (target) task to reduce the exploration risk of the latter while solving the two tasks in parallel. Unlike previous work, we do not assume the low-tier and high-tier tasks share the same dynamics or reward functions, and focus on robust knowledge transfer without prior knowledge on the task similarity. We identify a natural and necessary condition called the ``Optimal Value Dominance'' for our objective. Under this condition, we propose novel online learning algorithms such that, for the high-tier task, it can achieve constant regret on partial states depending on the task similarity and retain near-optimal regret when the two tasks are dissimilar, while for the low-tier task, it can keep near-optimal without making sacrifice. Moreover, we further study the setting with multiple low-tier tasks, and propose a novel transfer source selection mechanism, which can ensemble the information from all low-tier tasks and allow provable benefits on a much larger state-action space.},
+  selected = {true},
+  category = {TransferRL},
 }
 
 
@@ -36,6 +40,8 @@
   An important question is whether such a separation yields advantages over the standard online setting (i.e., $\pi^{\text{E}}=\pi^{\text{O}}$) for the risk-averse users. 
   We individually consider the gap-independent vs.~gap-dependent settings. For the former, we prove that the separation is indeed not beneficial from a minimax perspective.
   For the latter, we show that if choosing Pessimistic Value Iteration as the exploitation algorithm to produce $\pi^{\text{E}}$, we can achieve a constant regret for risk-averse users independent of the number of episodes $K$, which is in sharp contrast to the $\Omega(\log K)$ regret for any online RL algorithms in the same setting, while the regret of $\pi^{\text{O}}$ (almost) maintains its online regret optimality and does not need to compromise for the success of $\pi^{\text{E}}$.},
+  selected = {true},
+  category = {TransferRL},
 }
 
 
@@ -65,7 +71,7 @@
 },
 }
 
-@inproceedings{huang2022towards,
+@InProceedings{huang2022towards,
     title={Towards Deployment-Efficient Reinforcement Learning: Lower Bound and Optimality},
     author={Jiawei Huang and Jinglin Chen and Li Zhao and Tao Qin and Nan Jiang and Tie-Yan Liu},
     booktitle={ICLR},
@@ -74,6 +80,8 @@
     awards = {Spotlight},
     OpenReview = {https://openreview.net/forum?id=ccWaPGl9Hq&referrer=%5Bthe%20profile%20of%20Jiawei%20Huang%5D},
     abstract = {Deployment efficiency is an important criterion for many real-world applications of reinforcement learning (RL). Despite the community's increasing interest, there lacks a formal theoretical formulation for the problem. In this paper, we propose such a formulation for deployment-efficient RL (DE-RL) from an "optimization with constraints" perspective: we are interested in exploring an MDP and obtaining a near-optimal policy within minimal \emph{deployment complexity}, whereas in each deployment the policy can sample a large batch of data. Using finite-horizon linear MDPs as a concrete structural model, we reveal the fundamental limit in achieving deployment efficiency by establishing information-theoretic lower bounds, and provide algorithms that achieve the optimal deployment efficiency. Moreover, our formulation for DE-RL is flexible and can serve as a building block for other practically relevant settings; we give "Safe DE-RL" and "Sample-Efficient DE-RL" as two examples, which may be worth future investigation.},
+    selected = {true},
+    category = {OnlineRL},
 }
 
 
