@@ -1,4 +1,13 @@
 
-          <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
-          </div>
+<h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Multi-Agent RL</a></h4>
+<div class="publications">
+  {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=MARL]* %}
+</div>
+<h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Transfer RL</a></h4>
+<div class="publications">
+  {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=TransferRL]* %}
+</div>
+<h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Others</a></h4>
+<div class="publications">
+  {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=OnlineRL]* %}
+</div>
