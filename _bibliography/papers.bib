@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{
+  huang2024learning,
+  title={Learning to Steer Markovian Agents under Model Uncertainty},
+  author={Huang, Jiawei and Thoma, Vinzenz and Shen, Zebang and Nax, Heinrich H. and He, Niao},
+  booktitle={ICML 2024 Workshop: Aligning Reinforcement Learning Experimentalists and Theorists},
+  year={2024},
+  abstract={
+    We study reward design for steering multi-agent systems towards desired equilibria \emph{without} prior knowledge of the agents' underlying policy learning dynamics model. We introduce a model-based non-episodic Reinforcement Learning (RL) formulation for our steering problem. To handle the model uncertainty, we contribute a new optimization objective targeting at learning a \emph{history-dependent} steering strategy, and establish guarantees on its optimal solution. Theoretically, we identify conditions for the existence of steering strategies to guide agents sufficiently close to the desired policies. Complementing our theoretical contributions, we provide empirically tractable algorithms to approximately solve our objective, which effectively tackles the challenge in efficiently learning history-dependent strategies. We demonstrate the efficacy of our algorithms through empirical evaluations.
+  },
+  url={https://openreview.net/forum?id=IMApc6iwkG},
+  selected = {true},
+  category = {MARL},
+}
+
 @article{huang2024modelbased,
     title={Model-Based RL for Mean-Field Games is not Statistically Harder than Single-Agent RL},
     author={Huang, Jiawei and He, Niao and Krause, Andreas},
@@ -24,8 +38,7 @@
     abstract={
       In this paper, we study the statistical efficiency of Reinforcement Learning in Mean-Field Control (MFC) and Mean-Field Game (MFG) with general function approximation. We introduce a new concept called Mean-Field Model-Based Eluder Dimension (MBED), which subsumes a rich family of Mean-Field RL problems. Additionally, we propose algorithms based on Optimistic Maximal Likelihood Estimation, which can return an ϵ-optimal policy for MFC or an ϵ-Nash Equilibrium policy for MFG, with sample complexity polynomial w.r.t. relevant parameters and independent of the number of states, actions and the number of agents. Notably, our results only require a mild assumption of Lipschitz continuity on transition dynamics and avoid strong structural assumptions in previous work.
     },
-    selected = {true},
-    category = {MARL},
+    selected = {false},
 }
 
 
@@ -58,8 +71,7 @@
   An important question is whether such a separation yields advantages over the standard online setting (i.e., $\pi^{\text{E}}=\pi^{\text{O}}$) for the risk-averse users. 
   We individually consider the gap-independent vs.~gap-dependent settings. For the former, we prove that the separation is indeed not beneficial from a minimax perspective.
   For the latter, we show that if choosing Pessimistic Value Iteration as the exploitation algorithm to produce $\pi^{\text{E}}$, we can achieve a constant regret for risk-averse users independent of the number of episodes $K$, which is in sharp contrast to the $\Omega(\log K)$ regret for any online RL algorithms in the same setting, while the regret of $\pi^{\text{O}}$ (almost) maintains its online regret optimality and does not need to compromise for the success of $\pi^{\text{E}}$.},
-  selected = {true},
-  category = {TransferRL},
+  selected = {false},
 }
 
 
