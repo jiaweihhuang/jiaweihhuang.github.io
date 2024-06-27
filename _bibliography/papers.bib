@@ -31,27 +31,12 @@
 }
 
 
-@inproceedings{pmlr-v151-huang22a,
-  title = 	 { On the Convergence Rate of Off-Policy Policy Optimization Methods with Density-Ratio Correction },
-  author =       {Huang, Jiawei and Jiang, Nan},
-  booktitle = 	 {International Conference on Artificial Intelligence and Statistics},
-  pages = 	 {2658--2705},
-  abbr = {AISTATS},
-  year = 	 {2022},
-  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
-  volume = 	 {151},
-  series = 	 {Proceedings of Machine Learning Research},
-  publisher =    {PMLR},
-  pdf = 	 {https://proceedings.mlr.press/v151/huang22a/huang22a.pdf},
-  url = 	 {https://proceedings.mlr.press/v151/huang22a.html},
-  abstract = 	 { In this paper, we study the convergence properties of off-policy policy optimization algorithms with state-action density ratio correction under function approximation setting, where the objective function is formulated as a max-max-min problem. We first clearly characterize the bias of the learning objective, and then present two strategies with finite-time convergence guarantees. In our first strategy, we propose an algorithm called P-SREDA with convergence rate $O(\epsilon^{-3})$, whose dependency on $\epsilon$ is optimal. Besides, in our second strategy, we design a new off-policy actor-critic style algorithm named O-SPIM. We prove that O-SPIM converges to a stationary point with total complexity $O(\epsilon^{-4})$, which matches the convergence rate of some recent actor-critic algorithms in the on-policy setting. }
-}
 
 
 @inproceedings{huang2023statistical,
     title={On the Statistical Efficiency of Mean Field Reinforcement Learning with General Function Approximation},
     author={Huang, Jiawei and Yardim, Batuhan and He, Niao},
-    journal={International Conference on Artificial Intelligence and Statistics},
+    booktitle={International Conference on Artificial Intelligence and Statistics},
     year={2024},
     abbr={AISTATS},
     pdf = {https://arxiv.org/abs/2305.11283},
@@ -65,7 +50,7 @@
 @inproceedings{huang2023robust,
   title={Robust Knowledge Transfer in Tiered Reinforcement Learning},
   author={Huang, Jiawei and He, Niao},
-  journal={Advances in Neural Information Processing Systems},
+  booktitle={Advances in Neural Information Processing Systems},
   pdf = {https://arxiv.org/abs/2302.05534},
   year={2023},
   abbr={NeurIPS},
@@ -135,6 +120,22 @@
     category = {OnlineRL},
 }
 
+
+@inproceedings{pmlr-v151-huang22a,
+  title = 	 { On the Convergence Rate of Off-Policy Policy Optimization Methods with Density-Ratio Correction },
+  author =       {Huang, Jiawei and Jiang, Nan},
+  booktitle = 	 {International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {2658--2705},
+  abbr = {AISTATS},
+  year = 	 {2022},
+  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
+  volume = 	 {151},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v151/huang22a/huang22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v151/huang22a.html},
+  abstract = 	 { In this paper, we study the convergence properties of off-policy policy optimization algorithms with state-action density ratio correction under function approximation setting, where the objective function is formulated as a max-max-min problem. We first clearly characterize the bias of the learning objective, and then present two strategies with finite-time convergence guarantees. In our first strategy, we propose an algorithm called P-SREDA with convergence rate $O(\epsilon^{-3})$, whose dependency on $\epsilon$ is optimal. Besides, in our second strategy, we design a new off-policy actor-critic style algorithm named O-SPIM. We prove that O-SPIM converges to a stationary point with total complexity $O(\epsilon^{-4})$, which matches the convergence rate of some recent actor-critic algorithms in the on-policy setting. }
+}
 
 @article{jiang2020minimax,
   title={Minimax Value Interval for Off-Policy Evaluation and Policy Optimization},
