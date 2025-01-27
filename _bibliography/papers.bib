@@ -1,18 +1,29 @@
 ---
 ---
 
+
+@inproceedings{widmer2025steering,
+    title={Steering No-Regret Agents in MFGs under Model Uncertainty},
+    author={Widmer, Leo and Huang, Jiawei and He, Niao},
+    booktitle={International Conference on Artificial Intelligence and Statistics,},
+    year={2025},
+    abbr={AISTATS},
+    abstract={Incentive design is a popular framework for guiding agents' learning dynamics towards desired outcomes by providing additional payments beyond intrinsic rewards. However, most existing works focus on a finite, small set of agents or assume complete knowledge of the game, limiting their applicability to real-world scenarios involving large populations and model uncertainty. To address this gap, we study the design of steering rewards in Mean-Field Games (MFGs) with density-independent transitions, where both the transition dynamics and intrinsic reward functions are unknown. This setting presents non-trivial challenges, as the mediator must incentivize the agents to explore for its model learning under uncertainty, while simultaneously steer them to converge to desired behaviors without incurring excessive incentives payments. Assuming agents exhibit no(-adaptive) regret behaviors, we contribute novel optimistic exploration algorithms. Theoretically, we establish sub-linear regret guarantees for the cumulative gaps between the agents' behaviors and the desired ones. In terms of the steering cost, we demonstrate that our total incentive payments incur only sub-linear excess, competing with a baseline steering strategy that stabilizes the target policy as an equilibrium. Our work presents an effective framework for steering agents behaviors in large-population systems under uncertainty.},
+    selected = {false},
+}
+
+
+
 @inproceedings{
   huang2024learning,
   title={Learning to Steer Markovian Agents under Model Uncertainty},
   author={Huang, Jiawei and Thoma, Vinzenz and Shen, Zebang and Nax, Heinrich H. and He, Niao},
-  booktitle={International Conference on Machine Learning Workshop: Aligning Reinforcement Learning Experimentalists and Theorists,},
-  year={2024},
-  abbr={ICML ARLET},
-  abstract={
-    Designing incentives for an adapting population is a ubiquitous problem in a wide array of economic applications and beyond. In this work, we study how to design additional rewards to steer multi-agent systems towards desired policies \emph{without} prior knowledge of the agents' underlying learning dynamics. We introduce a model-based non-episodic Reinforcement Learning (RL) formulation for our steering problem. Importantly, we focus on learning a \emph{history-dependent} steering strategy to handle the inherent model uncertainty about the agents' learning dynamics. We introduce a novel objective function to encode the desiderata of achieving a good steering outcome with reasonable cost. Theoretically, we identify conditions for the existence of steering strategies to guide agents to the desired policies. Complementing our theoretical contributions, we provide empirical algorithms to approximately solve our objective, which effectively tackles the challenge in learning history-dependent strategies. We demonstrate the efficacy of our algorithms through empirical evaluations.
-  },
-  pdf={https://arxiv.org/pdf/2407.10207},
+  booktitle={International Conference on Learning Representations,},
+  abbr={ICLR},
+  year={2025},
+  pdf = {https://arxiv.org/pdf/2407.10207},
   code={https://github.com/jiaweihhuang/Steering_Markovian_Agents},
+  abstract = {Designing incentives for an adapting population is a ubiquitous problem in a wide array of economic applications and beyond. In this work, we study how to design additional rewards to steer multi-agent systems towards desired policies \emph{without} prior knowledge of the agents' underlying learning dynamics. Motivated by the limitation of existing works, we consider a new and general category of learning dynamics called \emph{Markovian agents}. We introduce a model-based non-episodic Reinforcement Learning (RL) formulation for our steering problem. Importantly, we focus on learning a \emph{history-dependent} steering strategy to handle the inherent model uncertainty about the agents' learning dynamics. We introduce a novel objective function to encode the desiderata of achieving a good steering outcome with reasonable cost. Theoretically, we identify conditions for the existence of steering strategies to guide agents to the desired policies. Complementing our theoretical contributions, we provide empirical algorithms to approximately solve our objective, which effectively tackles the challenge in learning history-dependent strategies. We demonstrate the efficacy of our algorithms through empirical evaluations.},
   selected = {true},
   category = {MARL},
 }
