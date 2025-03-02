@@ -27,7 +27,7 @@ I work on understanding the fundamental mathematical principles underlying the p
 I'm particularly interested in bridging the gap between theory and practice, designing algorithms that come with theoretical supports and demonstrate empirical performance.
 
 My previous research spans a broad spectrum of topics including:
-- **Reinforcement Learning from Human Feedback (RLHF)**: Developing methods that align AI behavior with human preferences.
+- **Reinforcement Learning from Human Feedback (RLHF)**: Developing methods to align AI with human preferences.
 - **Multi-Agent Reinforcement Learning (MARL)**: Understanding learning efficiency in multi-agent systems.
 - **Offline Reinforcement Learning**: Advancing learning algorithms in offline setting.
 
