@@ -24,5 +24,6 @@ I'm a Ph.D. student in <a href="https://inf.ethz.ch/">Computer Science</a> at <a
 
 My research mainly focuses on reinforcement learning.
 I'm interested in developing principled and efficient algorithms for sequential decision-making under uncertainty.
-Recently, I focus on reinforcement learning in multi-agent systems.
+Recently, I focus on RLHF and RL in multi-agent systems.
 Besides, I'm also interested in other topics, such as game theory, optimization, etc.
+
