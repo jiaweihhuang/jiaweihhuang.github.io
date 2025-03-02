@@ -8,7 +8,7 @@ nav: true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
-<div class="publications" style="width:1200px;">
+<div class="publications" style="width:1000px;">
 
 {%- for y in page.years %}
   <!-- <h2 class="year">{{y}}</h2> -->
