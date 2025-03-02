@@ -1,22 +1,22 @@
 <h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Reinforcement Learning from Human Feedback</a></h4>
 Sample efficiency is crucial in online RLHF. While previous works focus on strategic exploration for sample-efficient learning, we study the benefits by transfer learning.
-<div class="publications">
+<div class="publications" style="width:1000px;">
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=RLHF]* %}
 </div>
 <h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">MARL and Game Theory</a></h4>
 Learning equilibrium policy in large-population systems is challenging in general.
 Our ICML 2024 paper studies a class of large-population called Mean-Field Games (MFGs).
 Due to its special symmetric structure, we show that learning in MFGs is actually not much harder than single-agent RL.
-<div class="publications">
+<div class="publications" style="width:1000px;">
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=MFGs]* %}
 </div>
 In multi-agent system, agents' learning dynamics don't always lead to desirable outcomes. Our ICLR 2025 paper studies the steering setup, where agents' learning dynamics can be influenced by external steering rewards (e.g. financial subsidy by government). We explore how to design these rewards to efficiently guide the agents towards desired policies.
-<div class="publications">
+<div class="publications" style="width:1000px;">
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=Steering]* %}
 </div>
 <h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Others</a></h4>
 Early in my Ph.D., I explored various topics in single-agent online/offline RL.
 Motivated by the practical policy switching constraints, our ICLR 2022 paper introduces the deployment-efficient setup, and develops efficient algorithms that match our established lower bounds.
-<div class="publications">
+<div class="publications" style="width:1000px;">
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=OnlineRL]* %}
 </div>
