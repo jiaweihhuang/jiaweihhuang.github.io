@@ -1,6 +1,6 @@
 <h4 style="font-weight: 600"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Reinforcement Learning from Human Feedback</a></h4>
 Sample efficiency is crucial in online RLHF. Our work addresses it through two innovations.
-(1) Unlike conventional RL purely maximizing rewards, RLHF incorporates additional KL regularization. We discover and leverage special structures introduced by the KL term.
+(1) RLHF differs from conventional RL in the additional KL regularization. We investigate special structures introduced by the KL term and leverage them.
 (2) While previous works focus on strategic exploration, we study the benefits of transfer learning.
 <div class="publications" style="width:800px;">
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true, category=RLHF]* %}
