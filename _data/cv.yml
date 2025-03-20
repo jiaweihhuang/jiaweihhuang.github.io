@@ -62,7 +62,7 @@
 - title: Teaching
   type: nested_list
   contents:
-    - title: Foundation of Reinforcement Learning
+    - title: <a href="https://odi.inf.ethz.ch/teaching/FoRL.html">Foundation of Reinforcement Learning (ETH Zurich)</a>
       items:
         - Head TA (Spring 2025)
         - TA (Spring 2023 & Spring 2024)
