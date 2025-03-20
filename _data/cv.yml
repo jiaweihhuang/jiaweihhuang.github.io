@@ -59,6 +59,14 @@
       institution: Megvii Inc
       year: 2019
 
+- title: Teaching
+  type: nested_list
+  contents:
+    - title: Foundation of Reinforcement Learning
+      items:
+        - Head TA (Spring 2025)
+        - TA (Spring 2023 & Spring 2024)
+
     # - title: Professor of Theoretical Physics
     #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
     #   year: 1911 - 1917
