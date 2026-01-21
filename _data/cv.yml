@@ -48,16 +48,16 @@
       #   - title: Description 3.
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: Research Intern
-      institution: Tencent Robotics-X Lab
-      year: 2020
-      # description:
-      #   - Description 1.
-      #   - Description 2.
+    # - title: Research Intern
+    #   institution: Tencent Robotics-X Lab
+    #   year: 2020
+    #   # description:
+    #   #   - Description 1.
+    #   #   - Description 2.
 
-    - title: Research Intern
-      institution: Megvii Inc
-      year: 2019
+    # - title: Research Intern
+    #   institution: Megvii Inc
+    #   year: 2019
 
 - title: Teaching
   type: nested_list
